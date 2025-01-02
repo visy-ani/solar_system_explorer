@@ -1,0 +1,119 @@
+.floating-dialog {
+    position: fixed;
+    top: var(--spacing-20);
+    right: var(--spacing-4);
+    z-index: 20;
+    transition: transform var(--transition-duration);
+    width: 20rem;
+  }
+
+  .floating-dialog.closed {
+    transform: translateX(100%);
+  }
+  
+  .dialog-content {
+    background-color: var(--color-overlay);
+    backdrop-filter: blur(8px);
+    padding: var(--spacing-4);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .dialog-content {
+    background-color: rgba(17, 24, 39, 0.75);
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .dialog-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-white);
+  }
+  
+  .close-button {
+    color: var(--color-gray-400);
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: var(--color-white);
+  }
+  
+  /* Object List */
+  .object-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .object-item {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .object-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .object-item.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px var(--color-blue-500);
+  }
+  
+  .object-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .object-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .object-color-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+  }
+  
+  .object-name {
+    color: var(--color-white);
+  }
+  
+  .object-description {
+    font-size: 0.875rem;
+    color: var(--color-gray-400);
+    margin-top: 0.25rem;
+  }
+  
+  /* Loading State */
+  .loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .loading-spinner {
+    animation: spin 1s linear infinite;
+    color: var(--color-white);
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }

@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --color-primary: #3B82F6;
+  --color-background: #111827;
+  --color-text: #FFFFFF;
+  --color-text-secondary: #9CA3AF;
+  --color-border: #4B5563;
+  --color-overlay: rgba(17, 24, 39, 0.75);
+  --color-error: #EF4444;
+  
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  
+  /* Animation */
+  --transition-duration: 300ms;
+  --transition-timing: ease;
+  
+  /* Layout */
+  --border-radius: 0.5rem;
+  --dialog-width: 20rem;
+  --header-height: 4rem;
+}
