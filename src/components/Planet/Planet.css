@@ -1,0 +1,40 @@
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transition: all var(--transition-duration);
+  }
+  
+  .planet.selected {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s infinite;
+  }
+  
+  .planet.sun {
+    animation: pulse 2s infinite;
+    box-shadow: 0 0 50px #fbbf24;
+  }
+  
+  .planet-body {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .planet-label {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: var(--spacing-2);
+    white-space: nowrap;
+  }
+  
+  .planet-label-text {
+    background-color: var(--color-overlay);
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--border-radius);
+    font-size: 0.875rem;
+  }
